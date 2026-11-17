@@ -26,10 +26,10 @@ juce_add_plugin(SimpleGain
 juce_generate_juce_header(SimpleGain)
 
 target_sources(SimpleGain PRIVATE
-    Source/PluginProcessor.cpp
-    Source/PluginProcessor.h
-    Source/PluginEditor.cpp
-    Source/PluginEditor.h)
+    PluginProcessor.cpp
+    PluginProcessor.h
+    PluginEditor.cpp
+    PluginEditor.h)
 
 target_compile_definitions(SimpleGain PUBLIC
     JUCE_WEB_BROWSER=0
