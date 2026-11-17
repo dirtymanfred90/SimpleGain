@@ -23,6 +23,8 @@ juce_add_plugin(SimpleGain
     IS_MIDI_EFFECT FALSE
     COPY_PLUGIN_AFTER_BUILD FALSE)
 
+juce_generate_juce_header(SimpleGain)
+
 target_sources(SimpleGain PRIVATE
     Source/PluginProcessor.cpp
     Source/PluginProcessor.h
